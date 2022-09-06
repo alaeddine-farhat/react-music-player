@@ -6,10 +6,11 @@ function chillHop() {
 			cover:
 				"https://chillhop.com/wp-content/uploads/2020/09/0255e8b8c74c90d4a27c594b3452b2daafae608d-1024x1024.jpg",
 			artist: "Aso, Middle School, Aviino",
-			audio: "https://mp3.chillhop.com/serve.php/?mp3=10075",
+			audio: "/The Chainsmokers.mp3",
 			color: ["#205950", "#2ab3bf"],
 			id: uuidv4(),
 			active: true,
+			lyrics:"TEASIIIIOLNJLKVNDLKNDLKJLKFNELKFNLK?SFLKJLKLKNJKNLKNZDLKNFELJLKN"
 		},
 		{
 			name: "Daylight",
@@ -20,6 +21,7 @@ function chillHop() {
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
+			lyrics:"TEASIIIIOLNJLKVNDLKNDLKJLKFNELKFNLK?SFLKJLKLKNJKNLKNZDLKNFELJLKN"
 		},
 		{
 			name: "Keep Going",
@@ -30,6 +32,7 @@ function chillHop() {
 			color: ["#CD607D", "#c94043"],
 			id: uuidv4(),
 			active: false,
+			lyrics:"TEASIIIIOLNJLKVNDLKNDLKJLKFNELKFNLK?SFLKJLKLKNJKNLKNZDLKNFELJLKN"
 		},
 		{
 			name: "Nightfall",
@@ -40,6 +43,7 @@ function chillHop() {
 			color: ["#EF8EA9", "#ab417f"],
 			id: uuidv4(),
 			active: false,
+			lyrics:"TEASIIIIOLNJLKVNDLKNDLKJLKFNELKFNLK?SFLKJLKLKNJKNLKNZDLKNFELJLKN"
 		},
 		{
 			name: "Reflection",
@@ -50,6 +54,7 @@ function chillHop() {
 			color: ["#CD607D", "#c94043"],
 			id: uuidv4(),
 			active: false,
+			lyrics:"TEASIIIIOLNJLKVNDLKNDLKJLKFNELKFNLK?SFLKJLKLKNJKNLKNZDLKNFELJLKN"
 		},
 		{
 			name: "Under the City Stars",
@@ -60,6 +65,7 @@ function chillHop() {
 			color: ["#205950", "#2ab3bf"],
 			id: uuidv4(),
 			active: false,
+			lyrics:"TEASIIIIOLNJLKVNDLKNDLKJLKFNELKFNLK?SFLKJLKLKNJKNLKNZDLKNFELJLKN"
 		},
 		//ADD MORE HERE
 	];

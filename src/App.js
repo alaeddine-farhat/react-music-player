@@ -35,7 +35,7 @@ const App = () => {
 	const songEndHandler = async () => {
 		let currentIndex = songs.findIndex((song) => song.id === currentSong.id);
 		let nextSong = songs[(currentIndex + 1) % songs.length];
-		await setCurrentSong(nextSong);
+		setCurrentSong(nextSong);
 
 		const newSongs = songs.map((song) => {
 			if (song.id === nextSong.id) {
@@ -80,7 +80,7 @@ const App = () => {
 				setSongs={setSongs}
 				libraryStatus={libraryStatus}
 			/>
-			<Credit />
+			{/* <Credit /> */}
 			<audio
 				onLoadedMetadata={updateTimeHandler}
 				onTimeUpdate={updateTimeHandler}
@@ -88,6 +88,9 @@ const App = () => {
 				ref={audioRef}
 				src={currentSong.audio}
 			/>
+			<PreContainer>
+				<Pre>{currentSong.lyrics}</Pre>
+			</PreContainer>
 		</AppContainer>
 	);
 };
@@ -99,5 +102,22 @@ const AppContainer = styled.div`
 		margin-left: 0;
 	}
 `;
+const PreContainer = styled.div`
+display: flex;
+justify-content: center;
+`
+const Pre = styled.pre`
+overflow-x:hidden;
+overflow-y: auto;
+white-space:pre-wrap;
+word-wrap: break-word;
+font-size: 30px;
+text-align: center;
+width: 80vw;
+max-height: 45vh;
+@media screen and (max-width: 768px) {
+		width: 100vw;
+	}
+`
 
 export default App;

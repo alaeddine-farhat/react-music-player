@@ -12,9 +12,8 @@ const Song = ({ currentSong }) => {
 };
 
 const SongContainer = styled.div`
-	margin-top: 10vh;
-	min-height: 50vh;
-	max-height: 60vh;
+	min-height: 30vh;
+	max-height: 40vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -22,15 +21,15 @@ const SongContainer = styled.div`
 `;
 
 const Img = styled.img`
-	width: 20%;
+	width: 10%;
 	border-radius: 50%;
 	@media screen and (max-width: 768px) {
-		width: 50%;
+		width: 15%;
 	}
 `;
 
 const H1 = styled.h2`
-	padding: 3rem 1rem 1rem 1rem;
+	padding: 2rem 1rem 1rem 1rem;
 `;
 
 const H2 = styled.h3`
